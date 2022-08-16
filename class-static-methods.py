@@ -23,6 +23,10 @@ class Fruit:
     def total_fruits(cls):
         return cls.total_fruits
 
+    @staticmethod
+    def square(n):
+        return n*n
+
     def info(self):
         return f"myself {self.name} i'm a fruit my color is {self.color}"
     def __str__(self):
@@ -32,3 +36,4 @@ apple = Fruit("Apple")
 banana = Fruit("Banana","Blue")
 
 print(apple.info())
+print(Fruit.square(5))
