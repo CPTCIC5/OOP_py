@@ -8,7 +8,7 @@ class Employee:
     
     def fullname(self):
         return f"{self.first_name}"+f"{self.last_name}"
-
+    
 emp1=Employee('Aryan','idk','GaliNo420')
 print(emp1.email)
 
