@@ -37,3 +37,9 @@ banana = Fruit("Banana","Blue")
 
 print(apple.info())
 print(Fruit.square(5))
+
+
+class Math:
+    @staticmethod
+    def add(x,x2):
+        return x+x2
