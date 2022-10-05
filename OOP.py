@@ -105,3 +105,131 @@ class Math:
     def add(x,x2):
         return x+x2
 """
+
+"""
+class Employee:
+    raise_amount=1.04
+
+    def __init__(self,fname,lname,pay):
+        self.fname=fname
+        self.lname=lname
+        self.pay=pay
+        
+    @property
+    def email(self):
+        return self.fname+self.lname+'@hotmail.com'
+
+    def fullname(self):
+        return self.fname+self.lname
+
+    def apply_raise(self):
+        self.pay = int(self.pay * self.raise_amount)
+
+    @classmethod
+    def set_raise_amt(cls,amount):
+        cls.raise_amount = amount 
+
+    @staticmethod
+    def is_workday(day):
+        if day.weekday() == 5 or day.weekday() == 6:
+            return False
+        return True
+
+import datetime
+my_date=datetime.date()
+print(Employee.is_workday(my_date))
+
+emp1=Employee('Aryan','Noob',100)
+emp2=Employee('Ishan','Sharma',1000000)
+print(emp1.raise_amount)
+emp1.set_raise_amt(1.05)
+print(emp1.raise_amount)
+
+class Developer(Employee):
+    
+        super().__init__(fname,lname,pay)
+        self.stack=stack
+
+emp3=Developer('Aryan','Noob',5000,'Django+React')
+print(emp3.pay)
+emp3.apply_raise()
+print(emp3.pay)
+print(emp3.stack)
+#print(emp1.stack)
+"""
+
+"""
+class Employee:
+    raise_amount=1.04
+
+    def __init__(self,fname,lname,pay):
+        self.fname=fname
+        self.lname=lname
+        self.pay=pay
+    
+    def __str__(self):
+        return self.fname
+
+    @property
+    def email(self):
+        return f"{self.fname}-{self.lname}@gmail.com"
+
+    def fullname(self):
+        return f"{self.fname}-{self.lname}"
+
+    @classmethod
+    def set_raise_amount(cls,amount):
+        cls.raise_amount=amount
+
+    def apply_raise(self):
+        self.pay=int(self.pay * self.raise_amount)
+    
+    @staticmethod
+    def is_working_day(day):
+        if day.weekday() == 5 or day.weekday() == 6:
+            return False
+        return True
+
+class Manager(Employee):
+    def __init__(self, fname, lname, pay,branch):
+        super().__init__(fname, lname, pay)
+        self.branch=branch
+"""
+
+
+"""
+class Dog(object):
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    def speak(self):
+        return ('Hi im ',self.name)
+
+    def change_age(self,age):
+        self.age=age
+
+    def add_weight(self,weight):
+        self.weight=weight
+
+dog1=Dog('Aryan',5)
+dog1.speak()
+print(dog1.age)
+dog1.change_age(6)
+print(dog1.age)
+
+dog1.add_weight(20)
+print(dog1.weight)
+
+class Cat(Dog):
+    def __init__(self, name, age,color):
+        super().__init__(name, age)
+        self.color=color
+
+    def speak(self):
+        return self.name
+
+x1=Cat('Aryan',11,'Block')
+print(x1.speak())
+
+"""
